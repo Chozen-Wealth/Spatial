@@ -10466,6 +10466,10 @@ readers do not read off random characters that represent icons */
   --fa: "\f3f6";
 }
 
+* {
+  transition: 0.3s ease;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10525,6 +10529,10 @@ header button {
   background-color: #f32853;
   border-radius: 5px;
   margin-top: 10px;
+  transition: 0.3s ease;
+}
+header button:hover {
+  background-color: rgb(255, 66, 66);
 }
 header p {
   margin: 30px;
@@ -22525,6 +22533,9 @@ textarea.form-control-lg {
   nav > a {
     padding-right: 10px;
   }
+  nav ul li:last-of-type {
+    display: none;
+  }
   nav ul li:last-of-type i {
     display: none;
   }
@@ -22538,17 +22549,33 @@ textarea.form-control-lg {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 446px) and (max-width: 768px) {
+@media (min-width: 445px) and (max-width: 768px) {
   nav > a {
     display: flex;
     flex-direction: column;
     text-wrap: nowrap;
+    padding-right: 10px;
+  }
+  nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+  }
+  nav ul li {
+    display: none;
   }
   nav ul li a {
     display: none;
   }
+  nav ul li:last-of-type {
+    display: block;
+  }
   nav ul li:last-of-type i {
     display: block;
+  }
+  header #pHeader {
+    text-wrap: nowrap;
+    font-size: 16px !important;
   }
   section:nth-of-type(2) > div:first-of-type {
     flex-wrap: wrap;
@@ -22580,7 +22607,7 @@ textarea.form-control-lg {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 446px) {
+@media (max-width: 445px) {
   nav {
     padding-right: 10px;
   }
@@ -22589,13 +22616,17 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: column;
     text-wrap: nowrap;
+    padding-right: 10px;
+    padding-left: 30px;
   }
   nav > a span {
     text-wrap: nowrap;
   }
   nav ul {
-    padding-left: 0;
-    padding-right: 0px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px !important;
   }
   nav ul li {
     display: none;
@@ -22608,6 +22639,9 @@ textarea.form-control-lg {
   }
   nav ul li:last-of-type i {
     display: block;
+  }
+  header #pHeader {
+    font-size: 14px !important;
   }
   section:nth-of-type(2) > div:first-of-type {
     flex-wrap: wrap;

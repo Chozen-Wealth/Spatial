@@ -18,6 +18,7 @@
             padding-right: 10px
         ul
             li:last-of-type
+                display: none
                 i
                     display: none
     section:nth-of-type(2)
@@ -31,19 +32,29 @@
         > div:nth-of-type(3)
             flex-wrap: wrap
 
-@media (min-width:446px) and (max-width:768px)
+@media (min-width:445px) and (max-width:768px)
     nav
         > a
             display: flex
             flex-direction: column
             text-wrap: nowrap
+            padding-right: 10px
         ul
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-right: 40px
             li
+                display: none
                 a
                     display: none
             li:last-of-type
+                display: block
                 i
                     display: block
+    header
+        #pHeader
+            text-wrap: nowrap
+            font-size: 16px !important
     section:nth-of-type(2)
         > div:first-of-type
             flex-wrap: wrap
@@ -69,7 +80,7 @@
             > div
                 flex-wrap: wrap
 
-@media (max-width:446px)
+@media (max-width:445px)
     nav
         padding-right: 10px 
         > a
@@ -77,11 +88,15 @@
             display: flex
             flex-direction: column
             text-wrap: nowrap
+            padding-right: 10px
+            padding-left: 30px
             span
                 text-wrap: nowrap
         ul
-            padding-left: 0
-            padding-right: 0px !important
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 20px
+            padding-right: 20px !important
             li
                 display: none
                 a
@@ -90,6 +105,9 @@
                 display: block
                 i
                     display: block
+    header
+        #pHeader
+            font-size: 14px !important
     section:nth-of-type(2)
         > div:first-of-type
             flex-wrap: wrap
