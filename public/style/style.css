@@ -10470,6 +10470,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(rgba(42, 41, 55, 0.75), rgba(42, 41, 55, 0.75)), url(../assets/images/banner.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 nav {
@@ -10504,8 +10507,6 @@ nav > ul a {
 }
 
 header {
-  background-image: linear-gradient(rgba(42, 41, 55, 0.75), rgba(42, 41, 55, 0.75)), url(../assets/images/banner.jpg);
-  background-size: cover;
   height: 700px;
   display: flex;
   flex-direction: column;
@@ -10528,6 +10529,7 @@ section:first-of-type {
   align-items: center;
   padding-top: 75px;
   padding-bottom: 75px;
+  background-color: white;
 }
 section:first-of-type > div {
   display: flex;
@@ -10598,6 +10600,40 @@ section:nth-of-type(2) button:last-of-type {
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+section:last-of-type button {
+  background-color: #F32853;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+footer div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: #aaaaaa;
+}
+footer div:last-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaaaaa;
+}
+footer div:last-of-type p:nth-of-type(2) {
+  border-right: 1px solid #aaaaaa;
+  border-left: 1px solid #aaaaaa;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /*!
