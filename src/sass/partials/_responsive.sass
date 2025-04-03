@@ -3,8 +3,19 @@
 @use "./_mixins"
 @use "./_variables"
 
+@media (min-width:993px)
+    nav
+        ul
+            li:last-of-type
+                i
+                    display: none
+
 @media (min-width:768px) and (max-width:992px)
-    
+    nav
+        ul
+            li:last-of-type
+                i
+                    display: none
     section:nth-of-type(2)
         > div
             p
@@ -15,3 +26,98 @@
             flex-wrap: wrap
         > div:nth-of-type(3)
             flex-wrap: wrap
+
+@media (min-width:446px) and (max-width:767px)
+    nav
+        > a
+            display: flex
+            flex-direction: column
+            text-wrap: nowrap
+        ul
+            li
+                a
+                    display: none
+            li:last-of-type
+                i
+                    display: block
+    section:nth-of-type(2)
+        > div:first-of-type
+            flex-wrap: wrap
+        > div:last-of-type
+            gap: 5% !important
+            button
+                font-size: 12px !important
+                padding-top: 10px !important
+                padding-bottom: 10px !important
+                padding-right: 20px !important
+                padding-left: 20px !important
+                text-wrap: nowrap
+            p
+                font-size: 16px !important
+    
+    section:nth-of-type(3)
+        > div:nth-of-type(2)
+            flex-wrap: wrap
+            > div
+                flex-wrap: wrap
+        > div:nth-of-type(3)
+            flex-wrap: wrap
+            > div
+                flex-wrap: wrap
+
+@media (max-width:445px)
+    nav
+    > a
+        display: flex
+        flex-direction: column
+        text-wrap: nowrap
+    ul
+        li
+            a
+                display: none
+        li:last-of-type
+            i
+                display: block
+    section:nth-of-type(2)
+        > div:first-of-type
+            flex-wrap: wrap
+        > div:last-of-type
+            gap: 5% !important
+            button
+                font-size: 12px !important
+                padding-top: 10px !important
+                padding-bottom: 10px !important
+                padding-right: 20px !important
+                padding-left: 20px !important
+                text-wrap: nowrap
+            p
+                font-size: 16px !important
+
+    section:nth-of-type(3)
+        > div:nth-of-type(2)
+            flex-wrap: wrap
+            > div
+                flex-wrap: wrap
+        > div:nth-of-type(3)
+            flex-wrap: wrap
+            > div
+                flex-wrap: wrap
+    section:last-of-type
+        
+
+    footer
+        > div:last-of-type
+            flex-direction: column
+            p:nth-of-type(2)
+                border-top: 1px solid #aaaaaa
+                border-bottom: 1px solid #aaaaaa
+                padding-top: 20px
+                padding-bottom: 20px
+                margin-top: 20px
+                margin-bottom: 20px
+                border-right: none
+                border-left: none
+                padding-right: 0px
+                padding-left: 0px
+                margin-left: 0px
+                margin-right: 0px

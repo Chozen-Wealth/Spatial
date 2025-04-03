@@ -10501,9 +10501,12 @@ nav > ul {
   gap: 40px;
   padding-right: 50px;
 }
-nav > ul a {
+nav > ul li a {
   color: white;
   text-decoration: none;
+}
+nav > ul li i {
+  display: none;
 }
 
 header {
@@ -22506,7 +22509,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (min-width: 993px) {
+  nav ul li:last-of-type i {
+    display: none;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
+  nav ul li:last-of-type i {
+    display: none;
+  }
   section:nth-of-type(2) > div p {
     font-size: 16px !important;
   }
@@ -22515,6 +22526,107 @@ textarea.form-control-lg {
   }
   section:nth-of-type(3) > div:nth-of-type(3) {
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 446px) and (max-width: 767px) {
+  nav > a {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+  }
+  nav ul li a {
+    display: none;
+  }
+  nav ul li:last-of-type i {
+    display: block;
+  }
+  section:nth-of-type(2) > div:first-of-type {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(2) > div:last-of-type {
+    gap: 5% !important;
+  }
+  section:nth-of-type(2) > div:last-of-type button {
+    font-size: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    text-wrap: nowrap;
+  }
+  section:nth-of-type(2) > div:last-of-type p {
+    font-size: 16px !important;
+  }
+  section:nth-of-type(3) > div:nth-of-type(2) {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(3) > div:nth-of-type(2) > div {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(3) > div:nth-of-type(3) {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(3) > div:nth-of-type(3) > div {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 445px) {
+  > a {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+  }
+  ul li a {
+    display: none;
+  }
+  ul li:last-of-type i {
+    display: block;
+  }
+  section:nth-of-type(2) > div:first-of-type {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(2) > div:last-of-type {
+    gap: 5% !important;
+  }
+  section:nth-of-type(2) > div:last-of-type button {
+    font-size: 12px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    text-wrap: nowrap;
+  }
+  section:nth-of-type(2) > div:last-of-type p {
+    font-size: 16px !important;
+  }
+  section:nth-of-type(3) > div:nth-of-type(2) {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(3) > div:nth-of-type(2) > div {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(3) > div:nth-of-type(3) {
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(3) > div:nth-of-type(3) > div {
+    flex-wrap: wrap;
+  }
+  footer > div:last-of-type {
+    flex-direction: column;
+  }
+  footer > div:last-of-type p:nth-of-type(2) {
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-right: none;
+    border-left: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
