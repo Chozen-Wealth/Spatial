@@ -10565,7 +10565,7 @@ section:nth-of-type(2) > div {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   gap: 30px;
   margin-top: 50px;
 }
@@ -10576,9 +10576,10 @@ section:nth-of-type(2) > div > div {
   background-color: white;
   font-weight: 500;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
 section:nth-of-type(2) > div > div img {
-  width: 550px;
+  width: 100%;
 }
 section:nth-of-type(2) > div > div p {
   color: #484848;
@@ -10602,6 +10603,35 @@ section:nth-of-type(2) button:last-of-type {
   border-radius: 5px;
 }
 
+section:nth-of-type(3) {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+section:nth-of-type(3) .textImages {
+  width: 50%;
+}
+section:nth-of-type(3) h1 {
+  color: #484848;
+}
+section:nth-of-type(3) img {
+  border: 10px solid #e3e3e3;
+}
+
+section:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
 section:last-of-type button {
   background-color: #F32853;
   border-radius: 5px;
@@ -10613,6 +10643,7 @@ footer {
   gap: 50px;
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #f6f6f6;
 }
 footer div:first-of-type {
   display: flex;
