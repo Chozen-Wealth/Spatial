@@ -10476,7 +10476,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 100px;
+  height: 80px;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -10504,7 +10504,7 @@ nav > ul a {
 }
 
 header {
-  background-image: url(../assets/images/banner.jpg);
+  background-image: linear-gradient(rgba(42, 41, 55, 0.75), rgba(42, 41, 55, 0.75)), url(../assets/images/banner.jpg);
   background-size: cover;
   height: 700px;
   display: flex;
@@ -10513,6 +10513,40 @@ header {
   align-items: center;
   color: white;
 }
+header button {
+  background-color: #f32853;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+header p {
+  margin: 30px;
+}
+
+section:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+section:first-of-type > div {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  gap: 75px;
+}
+section:first-of-type > div div:first-of-type {
+  width: 50%;
+}
+section:first-of-type > div div:first-of-type h1 {
+  color: #484848;
+}
+section:first-of-type > div div:nth-of-type(2) {
+  width: 50%;
+}
+section:first-of-type > div div:nth-of-type(2) p {
+  line-height: 30px;
+}
 
 section:nth-of-type(2) {
   background-color: #F6F6F6;
@@ -10520,6 +10554,10 @@ section:nth-of-type(2) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 75px;
+}
+section:nth-of-type(2) > h1 {
+  color: #484848;
 }
 section:nth-of-type(2) > div {
   display: flex;
@@ -10535,10 +10573,14 @@ section:nth-of-type(2) > div > div {
   align-items: center;
   background-color: white;
   font-weight: 500;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 }
 section:nth-of-type(2) > div > div img {
-  width: 100%;
+  width: 550px;
+}
+section:nth-of-type(2) > div > div p {
+  color: #484848;
+  font-weight: bold;
 }
 section:nth-of-type(2) > div:last-of-type {
   margin-bottom: 50px;
