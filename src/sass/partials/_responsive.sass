@@ -67,17 +67,25 @@
 
 @media (max-width:445px)
     nav
-    > a
-        display: flex
-        flex-direction: column
-        text-wrap: nowrap
-    ul
-        li
-            a
+        padding-right: 10px 
+        > a
+            padding-left: 10px
+            display: flex
+            flex-direction: column
+            text-wrap: nowrap
+            span
+                text-wrap: nowrap
+        ul
+            padding-left: 0
+            padding-right: 0px !important
+            li
                 display: none
-        li:last-of-type
-            i
+                a
+                    display: none
+            li:last-of-type
                 display: block
+                i
+                    display: block
     section:nth-of-type(2)
         > div:first-of-type
             flex-wrap: wrap
@@ -103,7 +111,17 @@
             > div
                 flex-wrap: wrap
     section:last-of-type
-        
+        h1
+            font-size: 16px !important
+        p
+            font-size: 12px !important
+        button
+                font-size: 12px !important
+                padding-top: 10px !important
+                padding-bottom: 10px !important
+                padding-right: 20px !important
+                padding-left: 20px !important
+                text-wrap: nowrap
 
     footer
         > div:last-of-type
