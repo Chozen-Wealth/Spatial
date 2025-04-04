@@ -10517,6 +10517,16 @@ nav > ul li i {
   display: none;
 }
 
+@keyframes apparition {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 header {
   height: 700px;
   display: flex;
@@ -10524,6 +10534,10 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
+}
+header h1 {
+  opacity: 0;
+  animation: apparition 0.5s ease 0.5s forwards 1;
 }
 header button {
   background-color: #f32853;
@@ -10535,6 +10549,8 @@ header button:hover {
   background-color: rgb(255, 66, 66);
 }
 header p {
+  opacity: 0;
+  animation: apparition 0.5s ease 0.75s forwards 1;
   margin: 30px;
 }
 
@@ -22521,7 +22537,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media (min-width: 993px) {
+@media (min-width: 992px) {
   nav > a {
     padding-right: 10px;
   }
@@ -22706,94 +22722,3 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=style.css.map */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* commit inutile */
-/* Test commit */

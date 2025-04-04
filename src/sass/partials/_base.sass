@@ -45,6 +45,19 @@ nav
                 text-decoration: none
             i
                 display: none
+
+
+@keyframes apparition
+    from
+        transform: translateY(-30px)
+        opacity: 0
+        
+    to
+        transform: translateY(0px)
+        opacity: 1
+        
+
+
 header
     // background-image: linear-gradient(rgba(42, 41, 55, 0.75), rgba(42, 41, 55, 0.75)) ,url(../assets/images/banner.jpg)
     // background-size: cover
@@ -54,7 +67,10 @@ header
     flex-direction: column
     justify-content: center
     align-items: center
-    color: white
+    color: white 
+    h1
+        opacity: 0
+        animation: apparition 0.5s ease 0.5s forwards 1   
     button
         background-color: $rouge
         border-radius: 5px
@@ -63,6 +79,8 @@ header
     button:hover
         background-color: rgb(255, 66, 66)
     p
+        opacity: 0
+        animation: apparition 0.5s ease 0.75s forwards 1
         margin: 30px
 
 section:first-of-type
